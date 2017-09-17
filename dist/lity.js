@@ -247,7 +247,7 @@
         
         console.log(matches);
         var timecode = matches[5] || 0;
-        if (timecode.indexOf('?t=') ){
+        if (timecode.indexOf('?t=') > -1){
             timecode = timecode.replace("?t=","");
         }
         var link = 'https://www.youtube' + (matches[2] || '') + '.com/embed/' + matches[4] + '?start=' + timecode + '&autoplay=1';
