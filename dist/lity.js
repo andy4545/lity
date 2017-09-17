@@ -246,7 +246,7 @@
         }
 
         return iframe(
-            'https://www.youtube' + (matches[2] || '') + '.com/embed/' + matches[4] + '?autoplay=1&t=' + (matches[5] || 0),
+            'https://www.youtube' + (matches[2] || '') + '.com/embed/' + matches[4] + '?autoplay=1&start=' + (matches[5] || 0),
             instance,
             matches[5],
             target
