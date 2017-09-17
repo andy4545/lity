@@ -248,7 +248,7 @@
         console.log(matches);
         var timecode = matches[5] || 0;
         timecode = timecode.replace("?t=","");
-        var link = 'https://www.youtube' + (matches[2] || '') + '.com/embed/' + matches[4] + '?autoplay=1&start=' + (timecode || 0);
+        var link = 'https://www.youtube' + (matches[2] || '') + '.com/embed/' + matches[4] + '?start=' + (timecode || 0) + 'autoplay=1';
         console.log(link);
         return iframe(
             link,
